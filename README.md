@@ -61,6 +61,7 @@ cd path_to_your_working_directory
 python modeling_main.py configure.txt RNA_structure.txt
 
 We also post a toy example together with the scripts and the example_configure.txt has been edit to make it compatible. For this test, cd to the working directory, type in: 
+
 python modeling_main.py example_configure.txt RNA_structure.txt
 
 ## Output files
