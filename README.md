@@ -55,7 +55,9 @@ terminator|210
 ### Step 4：Run the pipeline
 Put all necessary files mentioned above, as well as the data directory under the working directory.
 Open the command line window, cd to the working directory and run the analysis pipeline.
+
 cd path_to_your_working_directory
+
 python modeling_main.py configure.txt RNA_structure.txt
 
 We also post a toy example together with the scripts and the example_configure.txt has been edit to make it compatible. For this test, cd to the working directory, type in: 
