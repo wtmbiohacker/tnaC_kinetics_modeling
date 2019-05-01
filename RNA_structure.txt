@@ -1,0 +1,7 @@
+[configdesign]
+stemloop:63
+trp_absence_stalling:69
+trp_presence_stalling:72
+stop_codon:75
+ruta:90
+terminator:210

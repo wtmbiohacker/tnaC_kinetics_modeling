@@ -1,0 +1,17 @@
+[configdesign]
+f_ribo_attack:0.25
+f_beyond_stemloop:0.8
+f_stalling_trp_no:0.5
+f_stalling_trp_yes:0.2
+trp_ribosome:100
+f_rho_attack:5
+f_terminator:1
+rnap_elongation:40
+ribosome_elongation:30
+rho_translocation:100
+variable:f_ribo_attack
+variable_range:0.001,10
+increment_log:Yes
+variable_number:10
+simulation:2000
+step:0.1
