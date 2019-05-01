@@ -62,11 +62,24 @@ We also post a toy example together with the scripts and the example_configure.t
 python HTsensor_main.py example_configure.txt
 
 ## Output files
-The output files will be organized in the subdirectory whose name is specified by the variable name and its range. For instance, the example post here results in a . We term this subdirectory 'result directory' thereafter.
+The output files will be organized in the subdirectory whose name is specified by the variable name and its range. For instance, the example post here results in a "f_ribo_attack_0.001,10" folder to store the results. We term this subdirectory 'result directory' thereafter.
 
 Under this result directory, N folders corresponding to N values of the variable, stores the representative simulated macromolecular dynamics when using these variable values.
 
 In addition, one .csv file stores the sensor response for each simulated variable value, the main result of modeling. Here is an example.
+
+expression|f_ribo_attack
+----------|-------------
+0.001|0.0010
+0.0005|0.0028
+0.008|0.0077
+0.023|0.0215
+0.056|0.0599
+0.144|0.1668
+0.286|0.4642
+0.465|1.2915
+0.612|3.5938
+0.714|10.0
 
 Moreover, an expression vs. variable [plot](./image/result.png) is also presented.
 
