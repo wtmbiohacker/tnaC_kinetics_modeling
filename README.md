@@ -51,3 +51,22 @@ trp_presence_stalling|72
 stop_codon|75
 ruta|90
 terminator|210
+
+### Step 4：Run the pipeline
+Put all necessary files mentioned above, as well as the data directory under the working directory.
+Open the command line window, cd to the working directory and run the analysis pipeline.
+cd path_to_your_working_directory
+python HTsensor_main.py configure.txt
+
+We also post a toy example together with the scripts and the example_configure.txt has been edit to make it compatible. For this test, cd to the working directory, type in: 
+python HTsensor_main.py example_configure.txt
+
+## Output files
+The output files will be organized in the subdirectory whose name is specified by the variable name and its range. For instance, the example post here results in a . We term this subdirectory 'result directory' thereafter.
+
+Under this result directory, N folders corresponding to N values of the variable, stores the representative simulated macromolecular dynamics when using these variable values.
+
+In addition, one .csv file stores the sensor response for each simulated variable value, the main result of modeling. Here is an example.
+
+Moreover, an expression vs. variable [plot](./image/result.png) is also presented.
+
