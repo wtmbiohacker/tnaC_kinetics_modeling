@@ -21,31 +21,33 @@ MacOS or Linux is supported environment to run this tool; for Windows users, som
 ### Step 2：Prepare the configure file.
 One example is shown below. In this case, "f_ribo_attack" is regarded as a variable to test its impact on sensor response. "variable_range", "increment_log" and "variable_number" together define the values set to this variable during simulation. "variable_range" specifies the minimum and maximum values; "variable_number" specifies the number of values set to the variable within this range; "increment_log" specifies to set the values in log10 ("Yes" argument) or linear ("No" argument) space. For the detailed description of these parameters and their corresponding units, see Table S2 of our paper. In this flat configure file, the name and value of the parameters are seperated by ":".
 
-[configdesign]
-f_ribo_attack:0.25
-f_beyond_stemloop:0.8
-f_stalling_trp_no:0.3
-f_stalling_trp_yes:0.06
-trp_ribosome:100
-f_rho_attack:5
-f_terminator:1
-rnap_elongation:40
-ribosome_elongation:30
-rho_translocation:100
-variable:f_ribo_attack
-variable_range:0.99,1
-increment_log:Yes
-variable_number:20
-simulation:2000
-step:0.1
+|parameter|value|
+|---------|-----|
+f_ribo_attack|0.25
+f_beyond_stemloop|0.8
+f_stalling_trp_no|0.3
+f_stalling_trp_yes|0.06
+trp_ribosome|100
+f_rho_attack|5
+f_terminator|1
+rnap_elongation|40
+ribosome_elongation|30
+rho_translocation|100
+variable|f_ribo_attack
+variable_range|0.99,1
+increment_log|Yes
+variable_number|20
+simulation|2000
+step|0.1
 
 ### Step 3：Prepare the RNA structure file.
 This file specifies the positions for important structures in tnaC transcript, which corresponds to the timescale values defined in the configure file. For the detailed description of these parameters and their corresponding units, see Table S1 of our paper. One example is shown below. In this flat configure file, the name and value of the parameters are seperated by ":".
 
-[configdesign]
-stemloop:63
-trp_absence_stalling:69
-trp_presence_stalling:72
-stop_codon:75
-ruta:90
-terminator:210
+|parameter|value|
+|---------|-----|
+stemloop|63
+trp_absence_stalling|69
+trp_presence_stalling|72
+stop_codon|75
+ruta|90
+terminator|210
